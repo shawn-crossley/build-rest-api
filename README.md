@@ -1,6 +1,6 @@
 build-rest-api
 =========
-# REST Client for Node.js - Build.com APi
+# REST Client for Node.js - Build.com API
 
 Allows connecting to any API REST and get results as js Object. The client has the following features:
 
