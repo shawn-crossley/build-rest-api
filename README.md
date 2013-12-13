@@ -13,16 +13,16 @@ Allows connecting to any API REST and get results as js Object. The client has t
 
 ## Installation
 
-$ npm install https://github.com/shawn-crossley/build-rest-api.git
+$ npm install git+https://github.com/shawn-crossley/build-rest-api.git
 
 ## Usages
 
-### Category Service - [FullDocumentation][1]
+### Category Service - [Full Documentation][1]
 
 Get Brands
 ```javascript
 var api = require('build-rest-api'),
-client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+client = new api.BuildApiClient(EndPoint, AccessKey);
 
 client.categoryService.brands(82, log);
 

@@ -4,7 +4,7 @@
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 
 	client.categoryService.refreshLocalCache(siteId, platform, callback);
 
@@ -13,7 +13,7 @@ var api = require('build-rest-api'),
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 
 client.categoryService.refreshCache(siteId, platform, environment, callback);
 
@@ -22,28 +22,28 @@ client.categoryService.refreshCache(siteId, platform, environment, callback);
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.homepageItems(storeId, updateCache, callback);
 ```
 ### /categories/homepageItems
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.headerItems(storeId, platform, updateCache, callback);
 ```
 ### /categories/items
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.items(siteId, categoryId, callback);
 ```
 ### /categories/crossSell
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.crossSell(storeId, categoryId, crossSellType, pricebookId, viewType, updateCache, callback);
 
 ```
@@ -51,7 +51,7 @@ client.categoryService.crossSell(storeId, categoryId, crossSellType, pricebookId
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.productBreadcrumbTrailByUniqueId(siteId, currentCategoryId, productUniqueId, updateCache, callback);
 
 ```
@@ -59,7 +59,7 @@ client.categoryService.productBreadcrumbTrailByUniqueId(siteId, currentCategoryI
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 	client.categoryService.productBreadcrumbTrail(siteId, currentCategoryId, manufacturer, productId, updateCache, callback);
 
 ```
@@ -67,7 +67,7 @@ var api = require('build-rest-api'),
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 	client.categoryService.categoryBreadcrumbTrail(siteId, categoryId, callback);
 
 ```
@@ -75,7 +75,7 @@ var api = require('build-rest-api'),
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 	client.categoryService.facetCategory(siteId, categoryId, callback);
 
 ```
@@ -83,7 +83,7 @@ var api = require('build-rest-api'),
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 	client.categoryService.subs(siteId, categoryId, depth, featured, callback);
 
 ```
@@ -91,7 +91,7 @@ var api = require('build-rest-api'),
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.sideMenuComposite(siteId, currentCategoryId, callback);
 
 ```
@@ -99,7 +99,7 @@ client.categoryService.sideMenuComposite(siteId, currentCategoryId, callback);
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.sitemapComposite(storeId, updateCache, callback);//
 
 ```
@@ -107,7 +107,7 @@ client.categoryService.sitemapComposite(storeId, updateCache, callback);//
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.brandsComposite(siteId, categoryId, callback);
 
 ```
@@ -115,7 +115,7 @@ client.categoryService.brandsComposite(siteId, categoryId, callback);
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.brands(siteId, callback);
 
 ```
@@ -123,7 +123,7 @@ client.categoryService.brands(siteId, callback);
 
 ```javascript
 var api = require('build-rest-api'),
-	client = new api.BuildApiClient('http://devbox2:8080/build-webservices-1.0.0/services/', '');
+	client = new api.BuildApiClient(EndPoint, AccessKey);
 client.categoryService.manufacturers(siteId, manufacturer, callback);
 ```
 
