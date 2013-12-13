@@ -1,0 +1,21 @@
+{
+  "author": "Build Mobile Team",
+  "name": "build-api ",
+  "description": "node API client for Build.com Api",
+  "version": "0.1.0",
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/shawn-crossley/build-api.git"
+  },
+  "main": "./lib/build-rest-api",
+  "dependencies": {
+    "xml2js":">=0.2.4"
+    },
+  "devDependencies": {
+    "jasmine-node":">=1.2.3"
+    },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
